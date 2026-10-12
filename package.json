@@ -1,0 +1,13 @@
+{
+  "name": "beerfactory-telephone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fine Numbers -> RestoPlace telephony adapter",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
