@@ -1,0 +1,12 @@
+services:
+  telephony:
+    build: .
+    container_name: beerfactory-telephone
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      FINE_TOKEN: ${FINE_TOKEN}
+      RESTOPLACE_SECRET: ${RESTOPLACE_SECRET}
+      RESTOPLACE_URL: ${RESTOPLACE_URL:-https://telephony.restoplace.cc/api/incoming/}
+    ports:
+      - "127.0.0.1:3100:3000"
